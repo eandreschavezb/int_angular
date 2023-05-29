@@ -9,11 +9,15 @@ import {OverlayPanelModule} from 'primeng/overlaypanel';
 import { BotellaComponent } from './botella/botella.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {PanelMenuModule} from 'primeng/panelmenu';
+
+import { Perfil1Component } from './perfil1/perfil1.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BotellaComponent
+    BotellaComponent,
+    Perfil1Component
   ],
   imports: [
     BrowserModule,
@@ -21,12 +25,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     ButtonModule,
     TableModule,
-    OverlayPanelModule
+    OverlayPanelModule,
+    PanelMenuModule
   ],
   exports: [
     ButtonModule,
     TableModule,
-    OverlayPanelModule
+    OverlayPanelModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

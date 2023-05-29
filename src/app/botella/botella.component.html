@@ -1,9 +1,12 @@
 
-<p-button [label]="selectedProduct ? selectedProduct.name : 'Select a Product'" icon="pi pi-search" (click)="op.toggle($event)"></p-button>
+<p-button [label]="selectedProduct ? selectedProduct.name : 'Select a Product'" 
+icon="pi pi-search" (click)="op.toggle($event)"></p-button> 
+<!-- ESTO DE AQUI LE HACE POBLAR EL NOMBRE DEL BOTON CON EL ITEM ESCOGIDO -->
 
 <p-overlayPanel #op [showCloseIcon]="true" [style]="{width: '450px'}">
     <ng-template pTemplate>
-        <p-table [value]="products" selectionMode="single" [(selection)]="selectedProduct" (onRowSelect)="onRowSelect($event)" [paginator]="true" [rows]="5" responsiveLayout="scroll">
+        <p-table [value]="products" selectionMode="single" [(selection)]="selectedProduct" 
+        (onRowSelect)="onRowSelect($event)" [paginator]="false" [rows]="5" responsiveLayout="scroll">
             <ng-template pTemplate="header">
                 <tr>
                     <th pSortableColumn="name">Name<p-sortIcon field="name"></p-sortIcon></th>
