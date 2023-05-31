@@ -1,12 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-
-
-interface MenuItem {
-  label: string,
+interface Product {
+  name: string,
   image: string,
-  items: any
+  price: string
 }
-
 
 @Component({
   selector: 'app-perfil1',
@@ -15,83 +12,41 @@ interface MenuItem {
 })
 
 
-export class Perfil1Component implements OnInit{
-  items!: MenuItem[];
+export class Perfil1Component implements OnInit {
+  products!: Product[];
+  selectedProduct!: Product;
 
-  ngOnInit() {
-      this.items = [
-          {
-              label: 'File',
-              image: 'qr-test.png',
-              items: [{
-                      label: 'New', 
-                      items: [
-                          {label: 'User' },
-                          {label: 'Filter' }
-                      ]
-                  },
-                  {label: 'Open'},
-                  {separator: true},
-                  {label: 'Quit'}
-              ]
-          },
-/*           {
-              label: 'Edit',
-              icon: 'pi pi-fw pi-pencil',
-              items: [
-                  {label: 'Delete', icon: 'pi pi-fw pi-trash'},
-                  {label: 'Refresh', icon: 'pi pi-fw pi-refresh'}
-              ]
-          }, */
-/*           {
-              label: 'Help',
-              icon: 'pi pi-fw pi-question',
-              items: [
-                  {
-                      label: 'Contents',
-                      icon: 'pi pi-pi pi-bars'
-                  },
-                  {
-                      label: 'Search', 
-                      icon: 'pi pi-pi pi-search', 
-                      items: [
-                          {
-                              label: 'Text', 
-                              items: [
-                                  {
-                                      label: 'Workspace'
-                                  }
-                              ]
-                          },
-                          {
-                              label: 'User',
-                              icon: 'pi pi-fw pi-file',
-                          }
-                  ]}
-              ]
-          }, */
-/*           {
-              label: 'Actions',
-              icon: 'pi pi-fw pi-cog',
-              items: [
-                  {
-                      label: 'Edit',
-                      icon: 'pi pi-fw pi-pencil',
-                      items: [
-                          {label: 'Save', icon: 'pi pi-fw pi-save'},
-                          {label: 'Update', icon: 'pi pi-fw pi-save'},
-                      ]
-                  },
-                  {
-                      label: 'Other',
-                      icon: 'pi pi-fw pi-tags',
-                      items: [
-                          {label: 'Delete', icon: 'pi pi-fw pi-minus'}
-                      ]
-                  }
-              ]
-          } */
-      ];
+
+  ngOnInit(): void {
+      this.products= [
+        
+          {name: "Multipack 500ml 12 unidades",
+          image: "qr-test.png",
+          price: "$2"},
+          {name: "Multipack 250ml 12 unidades",
+          image: "qr-test.png",
+          price: "$2,84"},
+          {name: "Multipack 2500ml 6 unidades",
+          image: "qr-test.png",
+          price: "$3,68"},
+          {name: "Multipack 250ml 6 unidades",
+          image: "qr-test.png",
+          price: "$4,52"},
+          {name: "Botellon 1.5l",
+          image: "qr-test.png",
+          price: "$5,36"},
+          {name: "Botellon 2.0l",
+          image: "qr-test.png",
+          price: "$6,2"},
+          {name: "Botellon 2.0l",
+          image: "qr-test.png",
+          price: "$7,04"}
+        
+      ]
   }
+
+  onRowSelect(event: any) {
+    console.log(event)
+}
 }
 
