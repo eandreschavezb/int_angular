@@ -17,13 +17,15 @@ import { Perfil1Component } from './perfil1/perfil1.component';
 import { ThirdtryComponent } from './thirdtry/thirdtry.component';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import { MenubarModule } from 'primeng/menubar';
+import { LanguageOptionComponent } from './language-option/language-option.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BotellaComponent,
     Perfil1Component,
-    ThirdtryComponent
+    ThirdtryComponent,
+    LanguageOptionComponent
   ],
   imports: [
     BrowserModule,

@@ -22,7 +22,7 @@ export class ThirdtryComponent implements OnInit
   ngOnInit(): void {
       this.items = [
           {
-              label: ' Andrés Solano',
+              label: 'Pérez B. Bryan',
               items: [
                   {label: 'Departamento IT'},
                   {separator: true},

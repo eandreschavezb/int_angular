@@ -1,18 +1,17 @@
-<div [style]="{width: '150px', height:'400px', background: '#fe0606', position: 'absolute'}">
-  <h6>chch</h6>
+<div [style]="{width: '350px', height:'70px',background: '#6366f1',position: 'absolute' ,top: '80px', borderRadius: '10px'}">
 <p-avatar 
-image="https://media.geeksforgeeks.org/img-practice/banner/fork-python-thumbnail.png"
+image="assets/xav2.jpg"
 size="xlarge" 
 shape="circle"
-[style]="{width: '50px', height: '50px', position: 'absolute',left: '10%', top: '2%'}">
+[style]="{width: '50px', height: '50px', position: 'absolute', right: '6%', top: '13%'}">
 </p-avatar>
-<p-splitButton label="Save" icon="pi pi-plus">
+<p-splitButton label="Bryan Perez" [model]="items" [style]="{width: '250px', position: 'absolute', top: '15%', left: '3%'}">
 </p-splitButton>
 </div>
 
 
 
-
+<!--ESTE ES EL PRIMERO Y ESTA DENTRO DE UN NAVBAR -->
 
 <p-menubar [model]="items" [style]="{width: '250px'}">
 <ng-template pTemplate="start">
@@ -20,6 +19,30 @@ shape="circle"
   </ng-template>
 </p-menubar>
 
+
+<!--ESTE ES EL TERCERO-->
+
+
+<div [style]="{width: '350px', height:'70px',background: '#201C42',position: 'relative' ,top: '160px', borderRadius: '10px'}">
+  <p-avatar 
+  image="assets/xav.webp"
+  size="xlarge" 
+  shape="circle"
+  label="{{'items.label'}}"
+  [style]="{width: '50px', height: '50px', position: 'absolute', left: '10%', top: '13%'}">
+  </p-avatar>
+
+
+  <!--ESTE ES EL SEGUNDO-->
+
+
+  <p-splitButton 
+    label="Bryan Pérez" 
+    [model]="this.items"  
+    [style]="{width: '250px', position: 'absolute', top: '15%', right: '10%'}"
+    styleClass="p-button-text mr-2 mb-2">
+  </p-splitButton>
+  </div>
 
 
 
