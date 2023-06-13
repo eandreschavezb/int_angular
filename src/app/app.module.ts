@@ -18,6 +18,7 @@ import { ThirdtryComponent } from './thirdtry/thirdtry.component';
 import {SplitButtonModule} from 'primeng/splitbutton';
 import { MenubarModule } from 'primeng/menubar';
 import { LanguageOptionComponent } from './language-option/language-option.component';
+import { StyleClassModule } from 'primeng/styleclass';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { LanguageOptionComponent } from './language-option/language-option.compo
     PanelMenuModule,
     SplitButtonModule,
     MenubarModule,
+    StyleClassModule,
     BadgeModule
   ],
   exports: [
@@ -46,6 +48,7 @@ import { LanguageOptionComponent } from './language-option/language-option.compo
     OverlayPanelModule,
     SplitButtonModule,
     MenubarModule,
+    StyleClassModule,
     PanelMenuModule
   ],
   providers: [],

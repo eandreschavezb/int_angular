@@ -31,6 +31,24 @@ export class ThirdtryComponent implements OnInit
                   {label: 'Cerrar sesión'}
               ]
           },
+          {
+            label: 'Taf B. Chtib',
+            picture: '../../assets/ic_launcher.png',
+            items: [
+                {label: 'Departamento IT'},
+                {separator: true},
+                {label: 'Cerrar sesión'}
+            ]
+          },
+          {
+            label: 'Chtib B. Taf',
+            picture: '../../assets/qr-test.png',
+            items: [
+                {label: 'Departamento IT'},
+                {separator: true},
+                {label: 'Cerrar sesión'}
+            ]
+          },
       ];
   }
 }
