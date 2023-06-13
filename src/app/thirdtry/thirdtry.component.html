@@ -1,48 +1,71 @@
-<div [style]="{width: '350px', height:'70px',background: '#6366f1',position: 'absolute' ,top: '80px', borderRadius: '10px'}">
+<!-- <div [style]="{width: '350px', height:'70px',background: '#6366f1',position: 'absolute' ,top: '80px', borderRadius: '10px'}">
 <p-avatar 
-image="assets/xav2.jpg"
+image="assets/{{'items.picture'}}"  
 size="xlarge" 
 shape="circle"
 [style]="{width: '50px', height: '50px', position: 'absolute', right: '6%', top: '13%'}">
 </p-avatar>
 <p-splitButton label="Bryan Perez" [model]="items" [style]="{width: '250px', position: 'absolute', top: '15%', left: '3%'}">
 </p-splitButton>
-</div>
+</div> -->
 
 
 
 <!--ESTE ES EL PRIMERO Y ESTA DENTRO DE UN NAVBAR -->
 
-<p-menubar [model]="items" [style]="{width: '250px'}">
+<!-- <p-menubar [model]="items" [style]="{width: '250px'}">
 <ng-template pTemplate="start">
     <img src="assets/ic_launcher.png" height="40" class="p-mr-2" alt="brand logo">
   </ng-template>
-</p-menubar>
+</p-menubar> -->
 
 
 <!--ESTE ES EL TERCERO-->
 
 
-<div [style]="{width: '350px', height:'70px',background: '#201C42',position: 'relative' ,top: '160px', borderRadius: '10px'}">
+<!-- <div class="bg-danger">
+  <p>titulo</p>
+  <p>{{ items[0].label }}</p>
+
+  <img alt="item" [src]="items[0].picture">
+</div> -->
+
+<div [style]="{'background-color': '#E9BC45' , width: '450px' , height: '250px' , position: 'absolute' , left: '0%' , top: '0%'}">
   <p-avatar 
-  image="assets/xav.webp"
+[image]="items[0].picture"
+size="xlarge" 
+
+styleClass="mr-2"
+pBadge 
+value="4" 
+severity="danger"
+
+[style]="{'transform': 'rotate(0deg)' , 'transform-origin': 'bottom' , 'background-color': '#201C42', width: '50px',
+ 'color':'#fffff' , height: '50px', position: 'relative', left: '5%', top: '10%'}">
+</p-avatar>
+</div>
+
+
+<!-- <div [style]="{width: '350px', height:'70px',background: '#201C42',position: 'relative' ,top: '160px', borderRadius: '10px'}">
+  <p-avatar 
+  image="assets/{{'items.picture'}}"
   size="xlarge" 
   shape="circle"
   label="{{'items.label'}}"
   [style]="{width: '50px', height: '50px', position: 'absolute', left: '10%', top: '13%'}">
-  </p-avatar>
+  </p-avatar> -->
 
 
   <!--ESTE ES EL SEGUNDO-->
 
 
-  <p-splitButton 
+<!--   <p-splitButton 
     label="Bryan Pérez" 
     [model]="this.items"  
     [style]="{width: '250px', position: 'absolute', top: '15%', right: '10%'}"
     styleClass="p-button-text mr-2 mb-2">
-  </p-splitButton>
-  </div>
+  </p-splitButton> -->
+
 
 
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 
 interface MenuItem {
   label: string,
+  picture: string,
   items: any
 }
 
@@ -23,6 +24,7 @@ export class ThirdtryComponent implements OnInit
       this.items = [
           {
               label: 'Pérez B. Bryan',
+              picture: '../../assets/qr-test.png',
               items: [
                   {label: 'Departamento IT'},
                   {separator: true},
