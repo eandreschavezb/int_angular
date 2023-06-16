@@ -30,27 +30,36 @@ shape="circle"
   <img alt="item" [src]="items[0].picture">
 </div> -->
 
-<div [style]="{'background-color': '#E9BC45' , width: '450px' , height: '250px' , position: 'absolute' , left: '0%' , top: '0%'}">
+<div [style]="{'background-color': '#E9BC45' , width: '450px' , height: '8svh' , 'display': 'flex' , 'justify-content': 'start' , 'align-items': 'center'}">
   <p-avatar 
 [image]="items[1].picture"
 size="xlarge" 
 shape="square"
-styleClass="m-5"
 
 pBadge 
 value="4" 
 severity="success"
 
-[style]="{'transform': 'rotate(0deg)' , 'transform-origin': 'bottom' , 'background-color': 'rgb(0, 140, 255)', width: '50px',
- 'color':'#fffff' , height: '50px', position: 'relative', left: '5%', top: '10%'}">
+[style]="{'transform': 'rotate(0deg)' , 'background-color': 'rgb(0, 140, 255)', width: '5svh',
+ 'color':'#fffff' , height: '5svh' , 'margin-left': '2svh'}">
 </p-avatar>
+<h6 [style]="{ 'margin-left': '2svh'}">{{ items[0].label }}</h6>
 </div>
 
-<div class="container d-flex justify-content-center bg-light rounded" style="width: 80svw; height: 20svh;">
+
+
+
+
+
+<!-- <div class="container d-flex justify-content-center bg-light rounded" style="width: 80svw; height: 20svh;">
   <div class="d-flex h-100 w-25 justify-content-center align-items-center bg-success" style="color: rgb(255, 255, 255);">
     dhbashfdah fdasbjhdhba shfdahfdas bjhdhbas h fdahfdasb jhdhbashfdahfdasbjh
   </div>
-</div>
+</div> -->
+
+
+
+
 
 
 <!-- <div [style]="{width: '350px', height:'70px',background: '#201C42',position: 'relative' ,top: '160px', borderRadius: '10px'}">
