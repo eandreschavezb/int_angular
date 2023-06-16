@@ -19,6 +19,7 @@ import {SplitButtonModule} from 'primeng/splitbutton';
 import { MenubarModule } from 'primeng/menubar';
 import { LanguageOptionComponent } from './language-option/language-option.component';
 import { StyleClassModule } from 'primeng/styleclass';
+import { MenuModule } from 'primeng/menu';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { StyleClassModule } from 'primeng/styleclass';
     SplitButtonModule,
     MenubarModule,
     StyleClassModule,
+    MenuModule,
     BadgeModule
   ],
   exports: [
@@ -49,6 +51,7 @@ import { StyleClassModule } from 'primeng/styleclass';
     SplitButtonModule,
     MenubarModule,
     StyleClassModule,
+    MenuModule,
     PanelMenuModule
   ],
   providers: [],

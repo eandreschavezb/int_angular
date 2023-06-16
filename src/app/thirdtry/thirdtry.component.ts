@@ -1,11 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 
 interface MenuItem {
+  id: string,
   label: string,
-  picture: string,
+  picture: string, /* 
+  cargo: string, */
+  nombre: string,/*
+  separator: boolean, */
   items: any
 }
 
+interface pleados {
+  label: string,
+  nombre: string,
+  picture: string,
+  items: any
+}
 
 @Component({
   selector: 'app-thirdtry',
@@ -18,39 +28,53 @@ export class ThirdtryComponent implements OnInit
 
 
   items!: MenuItem[];
+  items2: pleados[]= [];
 
+  ngOnInit() {
+    this.items = [
+        {
+            id: '1',
+            label: 'Jefe Dep. IT\nDinamicaMercados',
+            nombre: 'david Pérez',
+            picture: '../../assets/xav.webp',
+            items: [
+                {
+                    label: 'bryan',
+                },
+                {
+                  label: 'Actualizar datos',
+                  icon: 'pi pi-refresh',
+                  url: 'http://angular.io'
+              },
+                {
+                    label: 'Cerrar Sesión',
+                    icon: 'pi pi-times',
+                    url: 'http://angular.io'
+                }
+                    ]
+        },
+    ];
 
-  ngOnInit(): void {
-      this.items = [
-          {
-              label: 'Pérez B. Bryan',
-              picture: '../../assets/qr-test.png',
-              items: [
-                  {label: 'Departamento IT'},
-                  {separator: true},
-                  {label: 'Cerrar sesión'}
-              ]
-          },
-          {
-            label: 'Taf B. Chtib',
-            picture: '../../assets/ic_launcher.png',
-            items: [
-                {label: 'Departamento IT'},
-                {separator: true},
-                {label: 'Cerrar sesión'}
-            ]
-          },
-          {
-            label: 'Chtib B. Taf',
-            picture: '../../assets/qr-test.png',
-            items: [
-                {label: 'Departamento IT'},
-                {separator: true},
-                {label: 'Cerrar sesión'}
-            ]
-          },
-      ];
-  }
+    this.items2 = [
+      {
+        label: 'Jefe Q&A',
+        nombre: 'Perico Palotes',
+        picture: '../../assets/xav2.jpg',
+        items: [
+            {
+                label: 'Actualizar datos',
+                icon: 'pi pi-refresh',
+                url: 'http://angular.io'
+            },
+            {
+                label: 'Cerrar Sesión',
+                icon: 'pi pi-times',
+                url: 'http://angular.io'
+            }
+                ]
+    },
+    ]
+}
 }
 
 

@@ -30,23 +30,59 @@ shape="circle"
   <img alt="item" [src]="items[0].picture">
 </div> -->
 
-<div [style]="{'background-color': '#E9BC45' , width: '450px' , height: '8svh' , 'display': 'flex' , 'justify-content': 'start' , 'align-items': 'center'}">
+<!-- <p-button [style]="{'background-color': '#E9BC45' , width: '15svw' , height: '8svh' , 'display': 'flex' , 'justify-content': 'start' , 'align-items': 'center'}">
   <p-avatar 
-[image]="items[1].picture"
-size="xlarge" 
-shape="square"
+    [image]="items[0].picture"
+    size="xlarge" 
+    shape="square"
+    pBadge 
+    value="4" 
+    severity="success"
+    [style]="{width: '5svh', 'color':'#fffff' , height: '5svh' , 'margin-left': '2svh'}">
+  </p-avatar>
+  <div class="d-flex flex-column justify-content-center mt-2" [style]="{'margin-left': '3svh'}">
+    <p [style]="{'text-align':'left' , 'line-height': '0.2' , 'font-weight': '900'}">{{ items[0].label }}</p>
+    <p [style]="{'text-align':'left' , 'line-height': '0.2' , 'font-weight': '300'}">{{ items[0].cargo }}</p>
+  </div>
+</p-button> -->
 
-pBadge 
-value="4" 
-severity="success"
 
-[style]="{'transform': 'rotate(0deg)' , 'background-color': 'rgb(0, 140, 255)', width: '5svh',
- 'color':'#fffff' , height: '5svh' , 'margin-left': '2svh'}">
-</p-avatar>
-<h6 [style]="{ 'margin-left': '2svh'}">{{ items[0].label }}</h6>
+<div class="card flex justify-content-center" [style]="{width: '15svw' , height: '8svh' , 'display': 'flex'}">
+  <p-menu #menu [model]="items2" appendTo="body" [popup]="true" [style]="{'line-height': '1' , 'font-size': '12px' , 'pointer-events': 'all'}"></p-menu>
+  <button pButton type="button" (click)="menu.toggle($event)" label="{{ items[0].nombre }}">
+    <p-avatar 
+    [image]="items[0].picture"
+    size="xlarge" 
+    shape="circle"
+    styleClass="mr-2"
+    pBadge 
+    value="4" 
+    severity="success"
+    [style]="{width: '5svh', 'color':'#fffff' , height: '5svh' , 'margin-left': '2svh' , top: '0.25svh'}">
+  </p-avatar>
+  </button>
 </div>
 
 
+
+
+
+<div class="btn-group">
+  <button class="btn btn-secondary btn-lg" type="button">
+    Large split button
+  </button>
+
+  <button type="button" class="btn btn-lg btn-secondary dropdown-toggle drop-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+
+  <ul class="dropdown-menu">
+    <li>dsadsa</li>
+    <li>sdadsa</li>
+    <li>dsfsad</li>
+  </ul>
+  
+</div>
 
 
 
