@@ -14,3 +14,40 @@
 		}
 	}
 } */
+
+
+.p-button {
+	font-size: calc(0.5em + 0.390625vw);
+	width: 30svw;
+}
+
+.p-menu	{
+	padding:.25rem 0;
+	background:#eff3f8;
+	color:#043d75;
+	border:1px solid #dfe7ef;
+	border-radius:6px;
+	width:30svw;
+}
+
+
+@media (max-width: 767px) {
+	.p-button {
+		font-size: calc(0.5em + 0.390625vw);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		margin-right: auto;
+		margin-left: auto;
+		width: 95svw;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 960px) {
+	.p-button {
+		font-size: calc(0.5em + 0.390625vw);
+		display: flex;
+		flex-direction: row;
+		width: 40svw;
+	}
+}

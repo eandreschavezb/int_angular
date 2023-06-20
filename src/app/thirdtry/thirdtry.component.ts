@@ -7,13 +7,15 @@ interface MenuItem {
   cargo: string, */
   nombre: string,/*
   separator: boolean, */
-  items: any
+  items: any,
+  mensajes: string
 }
-
+                                                     /*  PELONES MMH */
 interface pleados {
   label: string,
   nombre: string,
   picture: string,
+  mensajes: string,
   items: any
 }
 
@@ -35,11 +37,12 @@ export class ThirdtryComponent implements OnInit
         {
             id: '1',
             label: 'Jefe Dep. IT\nDinamicaMercados',
-            nombre: 'david Pérez',
+            nombre: 'David Pérez',
             picture: '../../assets/xav.webp',
+            mensajes:'5',
             items: [
                 {
-                    label: 'bryan',
+                    separator: true,
                 },
                 {
                   label: 'Actualizar datos',
@@ -57,13 +60,18 @@ export class ThirdtryComponent implements OnInit
 
     this.items2 = [
       {
-        label: 'Jefe Q&A',
+        label: 'Jefe QA',
         nombre: 'Perico Palotes',
         picture: '../../assets/xav2.jpg',
+        mensajes:'5',
         items: [
+            {
+              separator: true,
+            },
             {
                 label: 'Actualizar datos',
                 icon: 'pi pi-refresh',
+                
                 url: 'http://angular.io'
             },
             {
