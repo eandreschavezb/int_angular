@@ -1,7 +1,7 @@
 
 
 
-<div class="flex" [style]="{'width': '20svw', height: '4svh'}">
+<div class="flex mx-auto mx-md-0" [style]="{'width': '100%', height: '4svh'}">
   <p-menu class="" #menu [model]="items" appendTo="body" [popup]="true" [style]="{'line-height': '1' ,'pointer-events': 'all'}"></p-menu>
   <button pButton type="button" (click)="menu.toggle($event)" label="{{ items[0].nombre }}">
     <p-avatar 
