@@ -3,14 +3,13 @@ import { Component, OnInit } from '@angular/core';
 interface MenuItem {
   id: string,
   label: string,
-  picture: string, /* 
-  cargo: string, */
-  nombre: string,/*
-  separator: boolean, */
+  picture: string,
+  nombre: string,
   items: any,
   mensajes: string
 }
-                                                     /*  PELONES MMH */
+
+
 interface pleados {
   label: string,
   nombre: string,
@@ -39,7 +38,7 @@ export class ThirdtryComponent implements OnInit
             label: 'Jefe Dep. IT\nDinamicaMercados',
             nombre: 'David Pérez',
             picture: '../../assets/xav.webp',
-            mensajes:'5',
+            mensajes:'18',
             items: [
                 {
                     separator: true,

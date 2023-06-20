@@ -7,10 +7,10 @@
     <p-avatar 
     [image]="items[0].picture"
     size="xlarge" 
-    shape="circle"
+    shape="square"
     styleClass="mr-2"
     pBadge 
-    value="4" 
+    [value]="items[0].mensajes" 
     severity="success"
     [style]="{width: '5svh', 'color':'#fffff' , height: '5svh' , 'margin-left': '0.5svw' , top: '0.25svh'}">
   </p-avatar>
